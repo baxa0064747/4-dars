@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-dars</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1 text-center p-2">Movies catalog</h1>
+        <div class="row">
+            <div class="col-4">   
+                <form>
+                    <div class="mb-3">
+                        <input class="for-control rounded border w-100 p-2" type="text" placeholder="ave">
+                    </div>
+                    <div class="mb-3">
+                        <input class="for-control rounded border w-100 p-2" type="text" placeholder="ave">
+                    </div>
+                    <div class="mb-3 ">
+                        <select class="form-select">
+                            <option selected>All</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Rating (high to low)">
+                        <datalist id="datalistOptions">
+                        <option value="high to low">
+                        <option value="low to high"></option>
+                       
+                    </datalist>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                  </form>   
+                  <h2 class="h1 ">Bookmarked movies</h2> 
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <p class="mt-2 fw-bold">Avengers: Infinity War</p>
+                      <a class="btn btn-danger" href="#">Remove</a>
+                    </li>
+                    <li class="list-group-item">
+                      <p class="mt-2 fw-bold">The Avengers</p>
+                      <a class="btn btn-danger" href="#">Remove</a>
+                    </li>
+                    <li class="list-group-item">
+                      <p class=" mb-2 fw-bold">12 Years a Slave</p>
+                      <a class="btn btn-danger" href="#">Remove</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-8">
+                <h3> Search result: 39</h3>
+                <div class="alert alert-primary" role="alert">Use the form on the left to search for a movie</div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="card" >
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/infinity-war.jpg" height="300" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/marvel1.jpg" height="300" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/marvel2.jpg" height="300" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                          </button>
+                        </div>
+                        
+                        <div class="card-body">
+                          <h5 class="card-title">Avangers: Infinity War</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <img class="me-2" width="18" height="18" src="./img/yulduz.png" alt="yulduz">
+                            <p class="card-text">
+                              2018
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                            <img class="me-2" width="18" height="18" src="./img/img.png" alt="img">
+                            <p class="card-text">
+                              8.7
+                            </p>
+                          </div>
+                          <div class="justify-content-between d-flex">
+                            <button type="button" class="btn btn-outline-secondary">Watch Trailer</button>
+
+
+                            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              More Info
+                            </button>
+
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Avangers: Infinity War</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./img/marvel5.jpg" width="470" height="300" alt="">
+                                    Marvel was started in 1939 by Martin Goodman as Timely Comics,[3] and by 1951 had generally become known as Atlas Comics. The Marvel era began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko and many others. The Marvel brand, which had been used over the years, was solidified as the company's primary brand.
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    <button type="button" class="btn btn-primary">Понял</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-success">Bookmark</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card" >
+
+                          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active"  >
+                                <img src="./img/avengers.jpg" height="300" class="d-block w-100 " alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/marvel3.jpg" height="300" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/marvel4.jpg" height="300" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Следующий</span>
+                            </button>
+                          </div>
+
+                          <div class="card-body">
+                            <h5 class="card-title">The Avangers</h5>
+                            <div class="d-flex align-items-center mb-2">
+                              <img class="me-2" width="16" height="16" src="./img/yulduz.png" alt="yulduz">
+                              <p class="card-text">
+                                2018
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                              <img class="me-2" width="16" height="16" src="./img/img.png" alt="img">
+                              <p class="card-text">
+                                8.7
+                              </p>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <button type="button" class="btn btn-outline-secondary">Watch Trailer</button>
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  More Info
+                                </button>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">The Avangers</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <img src="./img/marvel4.jpg" width="470" height="300" alt="">
+                                        Marvel counts among its characters such well-known superheroes as Spider-Man, Iron Man, Captain America, Thor, Hulk, Wolverine, and Captain Marvel, as well as popular superhero teams such as the Avengers, the X-Men, the Fantastic Four, and the Guardians of the Galaxy. Its stable of well-known supervillains includes the likes of Doctor Doom, Magneto, Ultron, Thanos, Green Goblin, and Kingpin. Most of Marvel's fictional characters operate in a single reality known as the Marvel Universe, with most locations mirroring real-life places; many major characters are based in New York City.[4] Additionally, Marvel has published several licensed properties from other companies. This includes Star Wars comics twice from 1977 to 1986 and again since 2015.
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary">Понял</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-success">Bookmark</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <nav class=""  aria-label="...">
+                          <ul class="pagination ">
+                            <li class="page-item active" aria-current="page">
+                              <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
